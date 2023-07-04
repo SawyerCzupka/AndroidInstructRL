@@ -1,8 +1,4 @@
-from dotenv import load_dotenv
-import os
 from android_env import loader
-
-load_dotenv()
 
 # env = loader.load(
 #     avd_name=os.getenv("AVD_NAME"),
@@ -15,9 +11,9 @@ load_dotenv()
 
 env = loader.load(
     avd_name='Pixel_6_Pro_API_34',
-    android_avd_home='C:/Users/Sawyer/.android/avd',
-    android_sdk_root='C:/Users/Sawyer/AppData/Local/Android/Sdk',
-    emulator_path='C:/Users/Sawyer/AppData/Local/Android/Sdk/emulator/emulator',
-    adb_path='C:/Users/Sawyer/AppData/Local/Android/Sdk/platform-tools/adb',
-    task_path=r"D:/05 Programming/GitHub/AndroidInstructRL/classic_2048.textproto",
+    android_avd_home='/mnt/c/Users/Sawyer/.android/avd',
+    android_sdk_root='/mnt/c/Users/Sawyer/AppData/Local/Android/Sdk',
+    emulator_path='/mnt/c/Users/Sawyer/AppData/Local/Android/Sdk/emulator/emulator',
+    adb_path='/mnt/c/Users/Sawyer/AppData/Local/Android/Sdk/platform-tools/adb.exe',
+    task_path=r"classic_2048.textproto",
 )
